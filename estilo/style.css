@@ -164,7 +164,8 @@ picture > .imgG{
   background-color: rgba(0, 0, 0, 0.829);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .texto {
@@ -183,6 +184,11 @@ picture > .imgG{
 
 .imagem img {
   width: 300px;   
-  height: auto;
+  height: 200px;
   border-radius: 8px; 
+}
+.idolos{
+    font-weight: bolder;
+    font-size: 1.7em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.678);
 }
