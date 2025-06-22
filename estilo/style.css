@@ -27,7 +27,7 @@ header{
 .topo{
     display: flex;
     align-items: center; /* alinha verticalmente */
-    gap: 15px; /* espaço entre imagem e h1 */
+    gap: 5px; /* espaço entre imagem e h1 */
     margin-bottom: 0px;
     font-family: var(--fonte-titulo);
     text-shadow: 1px 2px 1px #BF920B;
@@ -44,7 +44,7 @@ nav{
     padding: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.507);
     display: flex;
-    gap: 20px;
+    gap: 0px;
     flex-wrap: wrap; /* permite quebrar para outra linha se a tela for pequena */
 }
 nav > a{
