@@ -3,30 +3,39 @@
 *{
     margin: 0px;
     padding: 0px;
-    
 }
 
 :root{
     --cor1:#BF920B;
     --cor2:#707070;
     --cor3:#F2B90F;
+    --cor4:#FFD700;
 
     --fonte-titulo: "Lobster", sans-serif;
 }
 
 header{
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.9),black);
-    color:var(--cor1);
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.8),black);
+    color:var(--cor4);
     font-weight: bolder;
-    padding-top: 20px;
-    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding: 10px;
 }
-header > h1{
-    text-align: center;
-    font-size: 5em;
-    margin-bottom: 50px;
+.topo{
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    gap: 15px; /* espaço entre imagem e h1 */
+    margin-bottom: 0px;
     font-family: var(--fonte-titulo);
-    text-shadow: 1px 2px 1px #F2B90F;
+    text-shadow: 1px 2px 1px #BF920B;
+    text-align: center;
+    font-size: 2em;
+}
+div#imglogo{
+    display: flex;
 }
 
 nav{
@@ -34,15 +43,18 @@ nav{
     background-color: black;
     padding: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.507);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* permite quebrar para outra linha se a tela for pequena */
 }
 nav > a{
     text-decoration: none;
-    color: var(--cor1);
+    color: var(--cor4);
     transition-duration: 0.5s;
     padding: 10px;
     border-radius: 5px;
     margin-right: 10px;
-    text-shadow: 1px 0px 0px #BF920B;
+    text-shadow: 1px 0px 0px var(--cor1);
     font-size: 1.1em;
 }
 nav > a:hover{
@@ -55,7 +67,7 @@ body{
 main{
     background-color: white;
     min-width: 280px;
-    max-width: 1000px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
@@ -64,9 +76,9 @@ main{
 }   
 
 .titulo{
-    color: var(--cor1);
+    color: var(--cor4);
     font-size: 2em;
-    text-shadow: 1px 1px 1px #F2B90F;
+    text-shadow: 1px 1px 1px var(--cor1);
     background-image: linear-gradient(to right, black, white);
     padding: 3px;
     border-radius: 5px; 
@@ -91,14 +103,14 @@ main p {
     line-height: 2em;
     font-size: 1em;
 }
-#vila{
-    background-color: rgba(0, 0, 0, 0.9);
+.imgm{
+    background-color: rgba(0, 0, 0, 0.85);
     margin: 20px;
     padding: 10px;
     border-radius: 5px 5px 0px 0px;
     box-shadow: 1px 1px 5px black;
 }
-div#vila > h3{
+div.imgm > h3{
     color: white;
     background-color: black;
     padding: 10px;
@@ -108,4 +120,5 @@ div#vila > h3{
 }
 picture > .imgG{
     margin-top: 20px;
+    max-height: 500px;
 }
