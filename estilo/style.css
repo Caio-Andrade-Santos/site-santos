@@ -11,6 +11,40 @@
     max-width: 300px;
     margin-top: 20px;
   }
+  .topo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo-titulo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .direita {
+    order: 2;
+    align-self: center;      /* centraliza a div dentro do flex */
+    white-space: normal;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;      /* centraliza o texto dentro da div */
+    width: auto;             /* deixa a largura automática, sem 100% */
+    max-width: 100%;         /* evita overflow */
+  }
+
+  .direita p {
+    margin: 0;               /* remove margem do parágrafo */
+  }
+
+  .centro {
+    order: 3;
+    justify-content: center;
+    margin-top: 10px;
+    width: auto;             /* largura automática */
+    flex-wrap: wrap;         /* evita quebrar links */
+  }
 }
 
 *{
@@ -28,7 +62,7 @@
 }
 
 header{
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.85),black);
+    background-color: black;
     color:var(--cor4);
     font-weight: bolder;
     display: flex;
@@ -36,15 +70,37 @@ header{
     align-items: center;
 }
 .topo{
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    align-items: center; /* alinha verticalmente */
-    gap: 5px; /* espaço entre imagem e h1 */
-    margin-bottom: 0px;
-    font-family: var(--fonte-titulo);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     text-shadow: 1px 2px 1px #BF920B;
-    text-align: center;
-    font-size: 2em;
-    padding-right: 50px;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-titulo > h1{
+     font-size: 2em;
+    font-family: var(--fonte-titulo);
+}
+.centro {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex: 1; /* para ocupar o espaço do meio */
+}
+
+/* Frase alinhada à direita */
+.direita {
+  white-space: nowrap;
+  text-align: right;
 }
 div#imglogo{
     display: flex;  
@@ -55,12 +111,12 @@ nav{
     background-color: black;
     padding: 0px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.507);
-
     display: flex;
     justify-content: center; /* centraliza os links */
     gap: 5px;               /* espaço entre os links */
     flex-wrap: wrap;         /* quebra linha em telas pequenas */
     width: 100%;
+    flex-direction: row;
 }
 nav > a{
     text-decoration: none;
