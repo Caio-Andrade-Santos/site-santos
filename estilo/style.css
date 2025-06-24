@@ -17,7 +17,6 @@
     text-align: center;
     gap: 10px;
   }
-
   .logo-titulo {
     flex-direction: column;
     align-items: center;
@@ -31,7 +30,8 @@
     padding: 0;
     text-align: center;      /* centraliza o texto dentro da div */
     width: auto;             /* deixa a largura automática, sem 100% */
-    max-width: 100%;         /* evita overflow */
+    max-width: 100%;
+    margin: 0;        /* evita overflow */
   }
 
   .direita p {
@@ -50,6 +50,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root{
@@ -66,14 +67,14 @@ header{
     color:var(--cor4);
     font-weight: bolder;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
 .topo{
     width: 100%;
     max-width: 1200px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     text-shadow: 1px 2px 1px #BF920B;
@@ -86,35 +87,26 @@ header{
     gap: 10px;
 }
 .logo-titulo > h1{
-     font-size: 2em;
+    font-size: 2em;
     font-family: var(--fonte-titulo);
 }
 .centro {
   display: flex;
   gap: 20px;
-  justify-content: center;
   flex-wrap: nowrap;
-  flex: 1; /* para ocupar o espaço do meio */
+  flex: 1;
 }
-
-/* Frase alinhada à direita */
 .direita {
-  white-space: nowrap;
   text-align: right;
 }
-div#imglogo{
-    display: flex;  
-}
-
 nav{
     margin-top: 16px;
     background-color: black;
     padding: 0px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.507);
-    display: flex;
-    justify-content: center; /* centraliza os links */
-    gap: 5px;               /* espaço entre os links */
-    flex-wrap: wrap;         /* quebra linha em telas pequenas */
+    justify-content: center; 
+    gap: 5px;
+    flex-wrap: wrap;
     width: 100%;
     flex-direction: row;
 }
