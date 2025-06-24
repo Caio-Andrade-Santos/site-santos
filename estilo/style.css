@@ -182,9 +182,12 @@ div.imgm > h3{
     margin: -10px;
     border-radius: 5px 5px 0px 0px;
 }
-picture > .imgG{
+.imgG{
     margin-top: 20px;
     max-height: 500px;
+    border-radius: 8px;
+    border: solid 1px; 
+    box-shadow: 1px 1px 1px black;
 }
 #inaug{
     border-radius: 5px;
