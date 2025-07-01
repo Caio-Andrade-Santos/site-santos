@@ -239,10 +239,17 @@ div.imgm > h3{
   height: 200px;
   border-radius: 8px;
   border: solid 1px; 
-  box-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 0px black;
 }
 .idolos{
     font-weight: bolder;
     font-size: 1.7em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.678);
+}
+footer{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
